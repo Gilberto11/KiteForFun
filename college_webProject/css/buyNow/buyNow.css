@@ -1,5 +1,5 @@
 
-
+/* css for navigation bar*/
 div.scrollmenu {
     background-color: #333;
     overflow: auto;
@@ -17,64 +17,119 @@ div.scrollmenu a {
 div.scrollmenu a:hover {
     background-color: #777;
 }
-
-
-form{
-background-color: black;
-width: 700px;
-height: 600px;
-font-family: Tahoma, Geneva, sans-serif;
-font-size: 14px;
-font-style: italic;
-line-height:24px;
-font-weight:bold;
-color: white;
-text-decoration: none;
-padding: 10px;
-border: 1px solid #999;
-}
-
-input{
-width:700px;
-display: block;
-border:5px solid #999;
-height: 50px;
-}
-
-textarea#feedback{
-width:700px;
-height:150px;
-display: block;
-border:5px solid #999;
-}
-
-input.button{
-width: 100px;
-float: right;
-background: white;
-color: #fff;
-font-family: Tahoma, Genova, sans-serif;
-height: 30px;
-border: 10px solid #999;
-}
-
-input.button:hover{
-background: white;
-color:black;
-}
-
-body { text-align: center; }
-     /* center all items within body, this property is inherited */
-body > * { text-align: left; }
-     /* left-align the CONTENTS all items within body, additionally
-        you can add this text-align: left property to all elements
-        manually */
-form { display: inline-block; }
-     /* reduces the width of the form to only what is necessary */
-
-img {
+    /*css for the body of the page*/
+    body{
+      font-family: Verdana, Tahoma, Arial, sans-serif;
+      overflow:auto;
       text-align: center;
-      max-width: 100%;
-      height:auto;
-      width:auto;
+      background-image: url("images/background.jpeg"); 
     }
+
+div.img {
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 40px;
+    text-align: center;
+}
+
+/*responsive css for the images*/
+.responsive {
+    padding: 0 50px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 100px){
+    .responsive {
+        width: 100%;
+    }
+}
+/*clearfix is a way to combat the zero-height container problem for floated elements.*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+    /* css setting unique id for the wrapper of the entire page*/
+    #wrapper {
+      text-align: center;
+      max-width: 1020;
+      height: auto;
+      width: 98%;
+      border: 1px solid #878E63;
+      border-radius : 2px;
+      box-shadow: 0 0 10px 0px rgba(12,3, 25, 0.8);
+    }
+
+     header {
+      width: 100%;
+      min-height: 25px;
+      padding: 1px;
+      text-align: center;
+      background-color:hsla(0, 0%, 100%, 0.9);
+    }
+    /*footer css*/
+    footer {
+      background: #D3D3D3;
+      width: 100%;
+      overflow: hidden;
+     
+    }
+    /*css for the display of all classes called "section"*/
+    .section {
+      width: 29%;
+      float: left;
+      margin: 2% 2%;
+      text-align: center;
+    }
+
+    ul {
+
+      list-style-type: none;
+      margin: 0;
+      padding:0;
+    }
+    /*display items one next to anohter*/
+    li {
+
+      display: inline;
+
+    }
+
+    h1 { 
+color: red;
+text-align: center;
+ }
