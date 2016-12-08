@@ -86,12 +86,13 @@ div.desc {
     /* css setting unique id for the wrapper of the entire page*/
     #wrapper {
       text-align: center;
-      max-width: 1020;
       height: auto;
       width: 98%;
       border: 1px solid #878E63;
       border-radius : 2px;
       box-shadow: 0 0 10px 0px rgba(12,3, 25, 0.8);
+      margin-left: auto; 
+      margin-right: auto;
     }
 
      header {
@@ -110,10 +111,16 @@ div.desc {
     }
     /*css for the display of all classes called "section"*/
     .section {
-      width: 29%;
-      float: left;
-      margin: 2% 2%;
-      text-align: center;
+       width: 29%;
+       padding: 20px;
+       text-align: center;
+       box-sizing: border-box;
+       display: inline-block;
+       margin-left: 2%;
+       margin-right: 2%;
+       min-width: 300px;
+       vertical-align: middle;
+       
     }
 
     ul {

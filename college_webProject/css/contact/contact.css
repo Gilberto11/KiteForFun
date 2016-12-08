@@ -93,12 +93,13 @@ p{
 }
 /*css for the wrapper of the entire page*/
 #wrapper {
-      max-width: 1020;
       height: auto;
       width: 98%;
       border: 1px solid #878E63;
       border-radius : 2px;
       box-shadow: 0 0 10px 0px rgba(12,3, 25, 0.8);
+      margin-left: auto; 
+      margin-right: auto;
 }
 
 header {
@@ -112,10 +113,7 @@ header {
 footer {
       background: #D3D3D3;
       width: 100%;
-      overflow: hidden;
-      
-
-     
+      overflow: hidden;    
 }
 
 ul {
@@ -133,8 +131,8 @@ ul {
 /* style the form*/
 form{
       background-color: black;
-      width: 800px;
-      height: 600px;
+      width: 60%;
+      height: ;
       font-family: Tahoma, Geneva, sans-serif;
       font-size: 14px;
       font-style: italic;
@@ -151,21 +149,23 @@ form{
 }
 
 input{
-      width:700px;
+      width:90%;
       display: block;
       border:5px solid #999;
       height: 50px;
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 4%;
+      margin-right: 3%;
+      margin-bottom: 10px;
 }
 
 textarea#feedback{
-      width:700px;
+      width:90%;
       height:150px;
       display: block;
       border:5px solid #999;
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 10px;
       }
 
 input.button{
@@ -185,17 +185,25 @@ input.button:hover{
 
 .section {
        width: 29%;
-       float: left;
-       margin: 2% 2%;
+       padding: 20px;
        text-align: center;
+       box-sizing: border-box;
+       display: inline-block;
+       margin-left: 2%;
+       margin-right: 2%;
+       min-width: 300px;
+       vertical-align: middle;
+       
     }
 
     #submitButton{
       background-color: white;
       padding: 5px;
-      width: 300px;
+      width: 50%;
       font-family: Tahoma,sans-serif;
       font-size: large;
+      margin-left: auto;
+      margin-right:auto;
 
     }
 
